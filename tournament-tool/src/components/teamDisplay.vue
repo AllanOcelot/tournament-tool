@@ -12,7 +12,7 @@
             <li>
                 <span class="image" alt="team name"></span>
                 <div class="content">
-                    <p>Team Liquid</p>
+                    <p @click="getTeams()">Team Liquid</p>
                     <a href="/teams:team_liquid">View Details</a>
                 </div>
             </li>
@@ -58,6 +58,16 @@ export default {
         "gender": "Male",
         "ip_address": "67.76.188.26"
       }]
+    }
+  },
+  methods: {
+    alertFunction: function alertFunction(){
+        alert('test');
+    },
+    getTeams: function getTeams(){
+        this.axios.get('http://localhost:8080/db_functions/function_get_teams.php').then((response) => {
+            console.log(response.data);
+        });
     }
   }
 }
