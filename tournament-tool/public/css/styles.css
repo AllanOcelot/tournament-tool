@@ -1,0 +1,44 @@
+/* This is the core theme of Tournament Tool */
+
+
+body, HTML {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* Form Styling */
+form label {
+    width: 100%;
+    text-align: left;
+}
+
+form input[type="text"] {
+    width: 100%;
+    height: 40px;
+    font-size: 0.8em;
+    border: 1px solid #fff;
+    background: #fff;
+    padding: 0 10px;
+}
+
+/* Global Page Styling */
+.container {
+    z-index: 1;
+}
+
+.content-wrapper {
+    background-color: #eee;
+}
+
+/* Landing Page Styling */
+.tournament-background {
+    background-color: blue;
+    background-image: url('../images/example_background.png');
+}
+
+.tournament-banner {
+    background-image: url('../images/example_banner.png');
+}

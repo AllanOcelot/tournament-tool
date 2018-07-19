@@ -1,0 +1,10 @@
+package-lock.json
+
+/node_modules
+
+
+/tournament-tool/server/DB_connection.php
+/tournament-tool/package-lock.json
+/tournament-tool/package.json
+/tournament-tool/yarn.lock
+/tournament-tool/public/images/*
