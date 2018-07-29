@@ -6,19 +6,30 @@
           <p> We will try to get the teams from postgress and display them here </p>
         </div>
       </div>
+      <TTDisplayTeams/>
     <TT-Footer/>
   </div>
 </template>
 
 <script>
 import TTHeader from './components/TTHeader.vue';
+import TTDisplayTeams from './components/TTDisplayTeams.vue';
 import TTFooter from './components/TTFooter.vue';
 
 export default {
   name: 'app',
   components: {
     TTHeader,
+    TTDisplayTeams,
     TTFooter
+  },
+  methods: {
+    loadTeams: function loadTeams() {
+
+    }
+  },
+  created: function () {
+    this.loadTeams()
   }
 }
 </script>
