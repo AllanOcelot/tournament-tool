@@ -6,13 +6,14 @@
           <p> We will try to get the teams from postgress and display them here </p>
         </div>
       </div>
-      <TTDisplayTeams/>
+      <TTDisplayTournament/>
     <TT-Footer/>
   </div>
 </template>
 
 <script>
 import TTHeader from './components/TTHeader.vue';
+import TTDisplayTournament from './components/TTDisplayTournament.vue';
 import TTDisplayTeams from './components/TTDisplayTeams.vue';
 import TTFooter from './components/TTFooter.vue';
 
@@ -21,6 +22,7 @@ export default {
   components: {
     TTHeader,
     TTDisplayTeams,
+    TTDisplayTournament,
     TTFooter
   },
   methods: {
